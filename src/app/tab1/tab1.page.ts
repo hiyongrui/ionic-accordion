@@ -28,6 +28,7 @@ export class Tab1Page {
 
   expandItem(item) {
     item.expanded = !item.expanded
+    console.warn("expanded item", item);
   }
 
 }
