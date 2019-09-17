@@ -1,0 +1,17 @@
+<!-- <p>
+  expandable works!
+</p> -->
+<div class="expand-wrapper" [class.expanded]="expanded">
+  <ng-content></ng-content>
+</div>
+
+<style>
+  .expand-wrapper {
+    height: 0;
+    transition: 0.2s linear;
+  }
+
+  .expanded {
+    height: 200px !important;
+  }
+</style>
