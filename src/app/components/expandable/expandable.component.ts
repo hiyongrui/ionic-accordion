@@ -13,7 +13,8 @@ export class ExpandableComponent implements OnInit {
 
   @Input('expanded') expanded;
   @Input('expandHeight') expandedHeight;
-  
+  @Input('product') product = [];
+
   currentHeight: number = 0;
 
   constructor() { }
@@ -21,6 +22,7 @@ export class ExpandableComponent implements OnInit {
   ngAfterViewInit() {
     console.warn(this.expanded);
     console.warn(this.expandedHeight);
+    console.warn(this.product);
   }
 
 

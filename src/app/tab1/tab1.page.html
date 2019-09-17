@@ -15,8 +15,8 @@
       <ion-label>
         <h2>My Neighbor</h2>
         <p>Testing p</p>  
-        <app-expandable [expandHeight]="itemExpandedHeight" [expanded]="item.expanded">
-          Hello expanded app content
+        <app-expandable [expandHeight]="itemExpandedHeight" [expanded]="item.expanded" [product]="selectedList">
+          {{selectedList}}
         </app-expandable> <!--https://stackoverflow.com/a/56600158-->
       </ion-label>
       <ion-button>View</ion-button>

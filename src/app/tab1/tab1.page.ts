@@ -11,6 +11,10 @@ export class Tab1Page {
   // itemExpanded: boolean = true;
   itemExpandedHeight: number = 200;
   //https://www.youtube.com/watch?v=0-goeHxBc8c
+  listOfChildren = ["First", "Second", "Third"];
+
+  selectedList = [];
+
   constructor() {
     this.items = [
       {expanded: false},
@@ -27,7 +31,9 @@ export class Tab1Page {
   }
 
   expandItem(item) {
-    item.expanded = !item.expanded
+    this.selectedList = this.listOfChildren;
+    item.expanded = !item.expanded;
+    console.warn("this selected list", this.selectedList);
   }
 
 }
